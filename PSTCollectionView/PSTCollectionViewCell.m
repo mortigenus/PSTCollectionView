@@ -59,7 +59,8 @@
         self.hidden = layoutAttributes.hidden;
         self.layer.transform = layoutAttributes.transform3D;
         self.layer.zPosition = layoutAttributes.zIndex;
-        self.layer.opacity = layoutAttributes.alpha;
+        //had to comment this because didn't want to subclass layout to modify cell's alpha
+//        self.layer.opacity = layoutAttributes.alpha;
     }
 }
 
